@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="TorrentTracker" version="1.0" date="2016-07-13" compatibility="2.0" installRequired="true" >
+	<author name="Lee Howarth" url="N/A" />
+	<summary>A Bittorrent tracker.</summary>
+	<description>A Bittorrent tracker.</description>
+	<keywords>
+		<word>tracker</word>
+		<word>torrent</word>
+	</keywords>
+	<category>content</category>
+    <pluginPrefs>
+        <pref name="announceUrl">http://domain.tld/announce</pref>
+        <pref name="announceMinInterval">300</pref>
+        <pref name="announceMaxInterval">900</pref>
+        <pref name="scrapeMinInterval">300</pref>
+    </pluginPrefs>    
+    <siteLinks>
+		<link url="torrents"       perm="everyone">Torrents</link>
+		<link url="torrent/upload" perm="everyone">Upload</link>
+	</siteLinks>
+    <userClasses>
+		<class name="Moderator" description="Moderator of torrents" />	
+        <class name="Uploader"  description="Uploader of torrents" />		
+	</userClasses>
+    <extendedFields>
+		<field name="uploaded"   type="EUF_INTEGER" default="0" active="true" />
+		<field name="downloaded" type="EUF_INTEGER" default="0" active="true" />
+        <field name="passkey"    type="EUF_TEXT"    default=""  active="true" />
+	</extendedFields>
+</e107Plugin>
