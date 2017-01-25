@@ -15,12 +15,16 @@ Then you can proceed to installing the plugin via the e107 plugins dashboard.
 
 The plugin adds two new user groups:
 
-```MODERATOR```
+###### MODERATOR
 
 The moderator class can edit / delete .torrents
 
-```UPLOADER```
+###### UPLOADER
 
 Uploaders can upload .torrents and edit but not delete.
 
 Admins of e107 have permissions to moderate and upload.
+
+### Features Lacking
+
+No administration interface.
