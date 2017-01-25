@@ -28,3 +28,11 @@ Admins of e107 have permissions to moderate and upload.
 ### Features Lacking
 
 No administration interface.
+
+### Requirements
+
+File_Bittorrent2 -> https://pear.php.net/package/File_Bittorrent2
+
+### Thanks
+
+Big thanks to Worldwide7477 he contributed alot to making this project.
